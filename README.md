@@ -12,7 +12,7 @@ News Portal is a React application that lets users browse, search, and favorite 
 
 ## Deployed Link
 
-- http://localhost:3000/
+- https://news-portal-six-nu.vercel.app/
 
 ## Video Demonstration
 
@@ -40,9 +40,6 @@ News Portal is a React application that lets users browse, search, and favorite 
 
 - **Navbar:** Provides navigation links, search functionality, and favorites count.
 - **NewsCard:** Displays individual news articles with options to mark as favorite and view details.
-- **Home:** Fetches and displays news articles based on selected category or search term with pagination.
-- **NewsDetails:** Shows detailed information about a selected news article.
-- **Favorites:** Lists user-selected favorite articles with pagination support.
 
 ## State Management
 
@@ -53,6 +50,7 @@ News Portal is a React application that lets users browse, search, and favorite 
 ## API Integration
 
 - **News API:** Axios-based functions in `newsApi.js` to fetch news articles and search by keywords.
+- **API Used:** https://newsapi.org/
 
 ## Styling
 
@@ -60,4 +58,10 @@ News Portal is a React application that lets users browse, search, and favorite 
 - **Bootstrap:** Used for layout and styling.
 - **Font Awesome:** Provides icons for UI elements.
 
+## Note on Deployment
 
+While deploying the NewsAPI, I encountered the following issue:
+
+> "Requests from the browser are not allowed on the Developer plan, except from localhost."
+
+This means that the NewsAPI does not allow requests from deployed applications on the Developer plan. To resolve this issue, you may need to upgrade your API plan or use a proxy server to handle API requests.
