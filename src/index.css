@@ -1,13 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: "Hind Siliguri", sans-serif;
+    background-color: #EEEEEE;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.news-description {
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+
+.fixed-height-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+.readmorebtn {
+    background: #15B9C3;
+    color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.readmorebtn:hover {
+    background: #0c8f96;
+    color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.newsTypeTitle {
+    position: absolute;
+    top: 168px;
+    background: #15B9C3;
+}
+
+.headlines {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+
+.colcontainer {
+    margin-top: 272px;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.btn-custom {
+    background-color: #15B9C3;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    transition: all 0.3s ease;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+}
+
+.btn-custom-active {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #15B9C3;
+    padding: 8px 12px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.btn-custom:hover {
+    background-color: #13a7b0;
+    width: auto;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-active:hover {
+    background-color: #2cc0c9;
+    width: auto;
+    height: auto;
+}
+
+.search_container {
+    border: 1px solid #EEEEEE;
+    text-align: center;
+    border-radius: 15px;
+    padding: 0 12px;
+
+}
+
+.search_input {
+    height: 35px;
+    border: none;
+    outline: none;
+}
+
+.search_button {
+    height: 35px;
+    background: transparent;
+    border: none;
+}
+
+/* Media query for screen sizes below 700px */
+@media (max-width: 700px) {
+    .newsTypeTitle {
+        position: static;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+}
+
+/* Media query for screen sizes between 701px and 991px */
+@media (min-width: 701px) and (max-width: 991px) {
+    .newsTypeTitle {
+        top: 148px;
+    }
+
+    .container {
+        margin-top: 40px;
+    }
+}
+
+/* Media query for screen sizes between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .newsTypeTitle {
+        top: 128px;
+    }
+
+    .container {
+        margin-top: 60px;
+    }
+}
+
+/* Media query for screen sizes 1200px and above */
+@media (min-width: 1200px) {
+    .newsTypeTitle {
+        top: 168px;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
 }

@@ -1,0 +1,91 @@
+.mainContent {
+    margin-top: 15%;
+}
+
+.details {
+    padding-right: 50px;
+}
+
+.details .title {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    color: black;
+}
+
+.details .author {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.details .author img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.details .author label {
+    color: grey;
+}
+
+.details .badge {
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.details img {
+    margin: 30px 0;
+    max-width: 80%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-image {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.desctop p {
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+.descbot h1 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.quote {
+    padding-left: 50px;
+    border-left: 5px solid red;
+}
+
+.quote i {
+    font-size: 50px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.quote p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .details {
+        padding-right: 0;
+    }
+
+    .details img {
+        width: 100%;
+    }
+}
